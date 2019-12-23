@@ -14,22 +14,20 @@
 
 Hit the URL from any browser: http://127.0.0.1:5000/api/v1/users/test
 And you should see as below:
-
 {
   "message": "Connected fine"
 }
 
 **Test Endpoints**:
-* Login: POST /api/v1/users/login
+* Login API: POST /api/v1/users/login
 username/password is admin/admin.
 Request:
+{
+    "username": "admin",
+    "password":"admin"
+}
 
-    {
-        "username": "admin",
-        "password":"admin"
-    }
-
- Response for above will be:
+Response for above will be:
 
     {
         "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NzcxMjIzMDgsIm5iZiI6MTU3NzEyMjMwOCwianRpIjoiMzJhY2NiYjEtNTgwMi00MGE3LWJiZjItNmUyN2QwOGRkMmIzIiwiZXhwIjoxNTc3MjA4NzA4LCJpZGVudGl0eSI6eyJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiJhZG1pbiJ9LCJmcmVzaCI6ZmFsc2UsInR5cGUiOiJhY2Nlc3MifQ.aJot1MU5qcB72Gkgp2kJqqRtzysd32BnPbuTV_dSSNw"
@@ -71,7 +69,7 @@ Request:
 users.db is included, which have ~12 entries.
 If ever you need to clean/clear the DB and re-create, follow the below:
 
- 1. cd C:\code\Py-Flask-API-Server Activate the virtual env, e.g.
- 1.  C:\code\Py-Flask-API-Server>apiserveenv\Scripts\activate cd
- 1.   C:\code\Py-Flask-API-Server\src run the command: python buildb.py
+ 1. cd C:\code\Py-Flask-API-Server
+ 1. Activate the virtual env, e.g. C:\code\Py-Flask-API-Server>apiserveenv\Scripts\activate
+ 1. Run the command  from inside src: e.g. C:\code\Py-Flask-API-Server\src>python buildb.py
 
