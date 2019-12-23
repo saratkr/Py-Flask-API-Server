@@ -13,6 +13,7 @@
 1. Run the application, python run.py
 
 Hit the URL from any browser: http://127.0.0.1:5000/api/v1/users/test
+
 And you should see as below:
 {
   "message": "Connected fine"
@@ -20,7 +21,9 @@ And you should see as below:
 
 **Test Endpoints**:
 * Login API: POST /api/v1/users/login
+
 username/password is admin/admin.
+
 Request:
 {
     "username": "admin",
