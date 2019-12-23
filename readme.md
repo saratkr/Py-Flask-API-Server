@@ -14,7 +14,8 @@
 
 Hit the URL from any browser: http://127.0.0.1:5000/api/v1/users/test
 
-And you should see as below:
+And you should see as:
+
 {
   "message": "Connected fine"
 }
@@ -25,6 +26,7 @@ And you should see as below:
 username/password is admin/admin.
 
 Request:
+
 {
     "username": "admin",
     "password":"admin"
@@ -39,6 +41,7 @@ Response for above will be:
 Use this Authorization Bearer in header for all the subsequent API's.
 
 * Create new User: POST /api/v1/users/create
+
 Request:
 
       {
@@ -53,12 +56,14 @@ Request:
 * Delete one user with ID: DELETE /api/v1/users/delete/2
 * Delete one user with email: DELETE /api/v1/users/delete
 
+
     Request:
     {
     "email" : "rey1@qa.com"
     }
 
 * Update one user: UPDATE /api/v1/users/update
+
 
     Request:
     {
